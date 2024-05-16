@@ -1,0 +1,21 @@
+import { useState } from "react";
+import "./App.css";
+import "modern-normalize";
+import userData from "./userData.json";
+import Profile from "./components/Profile/Profile";
+import "modern-normalize";
+const App = () => {
+  return (
+    <>
+      <Profile
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats}
+      />
+    </>
+  );
+};
+
+export default App;

@@ -1,0 +1,65 @@
+.container {
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgrey;
+  margin-top: 15px;
+}
+.userIcon {
+  width: 150px;
+  height: 150px;
+  border-radius: 80px;
+  background-color: rgb(37, 35, 35);
+}
+.infoUser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+.userName {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.userNickname,
+.userLocation {
+  color: gray;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.listStatus {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  border-top: 2px solid gray;
+  flex-grow: 1;
+}
+
+.nameStatus {
+  font-size: 25px;
+}
+
+.quantityItemStatus {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.listStatus li {
+  width: 131.33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 9px;
+}
+
+.listStatus li:not(:last-child) {
+  border-right: 2px solid #575656;
+}
