@@ -8,9 +8,9 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "add": "git add .",
-    "comit": "git commit -next",
-    "push": "git push origin main"
+    "pregit": "git add .",
+    "git": "git commit -m ‘update’",
+    "postgit": "git push origin main"
   },
   "dependencies": {
     "clsx": "^2.1.1",

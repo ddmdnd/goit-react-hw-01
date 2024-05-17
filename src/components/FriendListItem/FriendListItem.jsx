@@ -7,9 +7,14 @@ const FriendListItem = (friends) => {
   const isLine = clsx(friends.isOnline ? "Online" : "Offline");
   return (
     <>
-      <div>
-        <img src={friends.avatar} alt="Avatar" width="48" />
-        <p>{friends.name}</p>
+      <div className={css.item}>
+        <img
+          className={css.avatar}
+          src={friends.avatar}
+          alt="Avatar"
+          width="48"
+        />
+        <p className={css.userName}>{friends.name}</p>
         <p className={friend}>{isLine}</p>
       </div>
     </>

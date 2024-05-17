@@ -3,9 +3,9 @@ import "./App.css";
 import "modern-normalize";
 import userData from "./userData.json";
 import Profile from "./components/Profile/Profile";
-import friends from "./friends.json";
 import FriendList from "./components/FriendList/FriendList";
 import "modern-normalize";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 const App = () => {
   return (
@@ -18,6 +18,7 @@ const App = () => {
         stats={userData.stats}
       />
       <FriendList />
+      <TransactionHistory />
     </>
   );
 };
