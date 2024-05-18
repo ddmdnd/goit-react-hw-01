@@ -1,11 +1,13 @@
 import { cloneElement, useState } from "react";
 import "./App.css";
 import "modern-normalize";
+import friends from "../src/friends.json";
 import userData from "./userData.json";
 import Profile from "./components/Profile/Profile";
 import FriendList from "./components/FriendList/FriendList";
 import "modern-normalize";
 import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
+import transactions from "./transactions.json";
 
 const App = () => {
   return (
@@ -17,8 +19,8 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList />
-      <TransactionHistory />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
